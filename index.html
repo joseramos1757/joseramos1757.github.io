@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXAMEN PARCIAL 2</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="menu">
+            <div class="logo"></div>
+            <div class="opciones">
+                <ul class="seccion-lista">
+                    <li class="lista">INICIO</li>
+                    <li class="lista">SOBRE NOSOTROS</li>   
+                    <li class="lista">ACERCA DE</li>   
+                    <li class="lista">PORTAFOLIO</li>                          
+                </ul>
+            </div>                
+        </div>
+
+        <div class="slider-container">
+            <img class="slider-item"  src="1.jpg" alt="">
+            <img class="slider-item"  src="2.jpg" alt="">
+            <img class="slider-item"  src="3.jpg" alt="">
+        </div>
+
+        <div class="headline">
+                <CENTER><h1>INSCRIPCIONES ABIERTAS</h1><br></CENTER>
+                <center><button class="boton2">PRESIONE AQUI PARA MAS INFORMACION DE LOS CURSOS</button></center>
+        </div>
+
+        <div class="seccion">
+        
+        <div class="caja1">
+            <br>
+            <br>
+            <center>CONVERSOR DE DOLARES A BOLIVIANOS</center>
+            <br>
+            <Label>INSERTE EL MONTO EN DOLARES</Label>
+            <br>
+            <br>
+            <input type="text" class="caja" id="bol">
+            <br>
+            <br>
+            <button type="button" class="btn" onclick="cambio()">CONVERTIR A BOLIVIANOS</button>
+            <br>
+            <br>
+            <p type="text" class="texto-g"id="resul"></p>
+            
+        </div>
+        <div class="caja2">
+            <br>
+            <br>
+            <center>CONVERSOR DE BOLIVIANOS A DOLARES</center>
+            <br>
+            <Label>INSERTE EL MONTO EN BOLIVIANOS</Label>
+            <br>
+            <br>
+            <input type="text" class="caja" id="dol2">
+            <br>
+            <br>
+            <button type="button" class="btn" onclick="cambio2()">CONVERTIR A DOLARES</button>
+            <br>
+            <br>
+            <p type="text" class="texto-g"id="resul2"></p>
+        </div>
+        <div class="caja3">
+        
+            <form id="formulario">
+                <br>
+                <br>
+            <h2 class="text-center text-primary">INICIAR SESION</h2>
+                <br>
+                <br>    
+        <input id="nombre" type="text" placeholder="ingrese su nombre">
+            <br>
+            <br>   
+        <input id="ape" type="text" placeholder="ingrese su apelido">
+            <br>
+            <br>
+        <button class="btn btn-primary mt-2" type="submit">INICIAR SESION</button>
+        </form>
+        <hr>
+
+        <h3 id="respuesta" class="text-center fw-light">
+            
+        </h3>
+        </div>
+
+        </div>
+        <div class="seccion2">
+                <h1><center>REGISTRO</center></h1>
+                <br>
+                <br>
+                <center><input type="text" class="cajanombre" id="nombre" placeholder="inserte su nombre completo"></center>
+                <br>
+                <br>
+                <center><button type="button" class="boton" onclick="nombre()">REGISTRO</button></center>
+                <br>
+                <br>
+                <div class="logo2"></div>      
+        </div>
+        <script>
+            function nombre(){
+                var n=document.getElementById('nombre').value;
+                alert("BIENVENIDO AL SISTEMA "+n);
+            }
+            </script>   
+
+        <div class="footer">
+            <div class="foot1">
+                <br>
+                <h1>MISION</h1>
+                <br>
+                <h5>Somos una Institución Educativa del nivel superior que proporciona a los estudiantes una formación científica, tecnológica y humanista de calidad, que permite satisfacer los requerimientos del mercado laboral competitivo, respetando su identidad y su cultura.</h5>
+            </div>
+            <div class="foot1">
+                <br>
+                <h1>VISION</h1>
+                <br>
+                <h5>Al 2021 seremos una institución de educación superior tecnológica acreditada, líder a nivel Regional y Nacional, en competitividad profesional, para lograr un alto índice de inserción laboral y de autoempleo de sus egresados titulados.</h5>
+            
+            </div>
+            <div class="foot1">
+                <br>
+                <h2>ENFERMERIA</h2>
+                <br>
+                <br>
+                <h5>El Técnico Medio en Enfermería es integrante del equipo de salud, cuyas actividades y tareas están enfocadas principalmente en la realización de acciones en promoción de la salud, educación y cuidado de la salud sin dejar de lado a las personas</h5>
+            </div>
+            <div class="foot1">
+                <br>
+                <h2>SISTEMAS</h2>
+                <br>
+                <br>
+                <h5>El profesional Técnico Superior en Sistemas Informáticos está capacitado para planificar, dirigir, relevar, analizar, diseñar, desarrollar e implementar proyectos de integración de softwarE. El método práctico de enseñanza permite al estudiante gestionar soluciones </h5>
+
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+<script src="app.js"></script>
+</html>

@@ -1,0 +1,160 @@
+*{
+    margin: 0%;
+
+}
+.contenedor{
+    background-color:silver;
+    width: 100%;
+    height: 100%;
+}
+.menu{
+    width: 100%;
+    height: 150px;
+    background-image: url(encabezado.jpg);
+    /*background-size:contain;*/
+    background-position:center;
+    background-repeat:  repeat;
+    padding: 15px;
+}
+.logo{
+   background-image: url(berlin.png);
+   background-size:contain;
+   background-position:center;
+   background-repeat:  no-repeat;
+    width: 15%;
+    height: 140px;
+    text-align: center;
+    color: white;
+    float: left;
+}
+.logo2{
+  background-image: url(berlin.png);
+  background-size:contain;
+  background-position:center;
+  background-repeat:  no-repeat;
+   width: 15%;
+   height: 140px;
+   margin-left: 555px;
+
+}
+.seccion-lista{
+    width: 70%;
+    background-color: transparent;
+    float: left;
+    margin-top:0px;
+    margin-left: 90px;
+    font-size:x-large;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aliceblue;
+}
+.lista{
+    display: inline-block;
+    padding-right: 35px;
+}
+.opciones{
+    padding-top: 45px;
+}
+.boton{
+    width: 150px;
+    background-color: darkred;
+    border-radius: 10px; 
+    color: white;
+    padding:15px;
+}
+.boton2{
+    width: 1024px;
+    background-color: darkred;
+    border-radius: 10px; 
+    color: white;
+    padding:15px;
+        
+}
+
+.imagen{
+
+    float: left;
+    padding-left: 350px;
+}
+.formulario{
+    float:right;
+    padding-right: 450px;
+    padding-top: 50px;
+}
+.seccion{
+    padding: 5px;
+    width: 100%;
+    float: left;
+}
+.caja1, .caja2, .caja3{
+    width: 300px;
+    height: 300px;
+    float: left;
+    background-color:darkred;
+    color: white;
+    margin-right:50px;
+    text-align: center;
+    margin-left: 70px;
+    margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+}
+.slider-container {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    overflow-x:scroll;
+  }
+  
+  .slider-container img {
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .caja{
+    width: 150px;
+    background-color: white;
+    border-radius: 10px; 
+    color: black;
+    padding:15px;
+    font-size: large;
+    text-align: center;
+  }
+  .texto-g{
+    font-size: x-large;
+  }
+  .seccion{
+    background-color: silver;
+    
+  }
+  .cajanombre{
+    width: 500px;
+    background-color: white;
+    border-radius: 10px; 
+    color: black;
+    padding:15px;
+    font-size: large;
+    text-align: center;
+  }
+  .seccion2{
+    margin-top: 50px;
+    background-color: rgb(102, 99, 99);
+    text-align: center;
+  }
+  .footer{
+    padding: 5px;
+    width: 100%;
+    float: left;
+    background-color: rgb(102, 99, 99);
+}
+.foot1, .foot2, .foot3,.foot4{
+    width: 200px;
+    height: 300px;
+    float: left;
+    background-color:darkred;
+    color: white;
+    margin-right:50px;
+    text-align: center;
+    margin-left: 70px;
+    margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
