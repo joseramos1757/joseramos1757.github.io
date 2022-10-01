@@ -1,149 +1,244 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
+<!--
+
+  Plantilla inicial de Bootstrap 4
+  @author parzibyte
+  Visita: parzibyte.me/blog
+
+-->
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EXAMEN PARCIAL 2</title>
-    <link rel="stylesheet" href="estilos.css">
-    <script src="javascript.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Plantilla básica para Bootstrap">
+    <meta name="author" content="Parzibyte">
+    <title>INSTITUTO TÉCNICO BERLIN</title>
+    <!-- Cargar el CSS de Boostrap-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Cargar estilos propios -->
+    <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
-    <div class="contenedor">
-        <div class="menu">
-            <div class="logo"></div>
-            <div class="opciones">
-                <ul class="seccion-lista">
-                    <li class="lista">INICIO</li>
-                    <li class="lista">SOBRE NOSOTROS</li>   
-                    <li class="lista">ACERCA DE</li>   
-                    <li class="lista">PORTAFOLIO</li>                          
-                </ul>
-            </div>                
-        </div>
+    <!-- Definición del menú -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="berlin"><img src="berlin.png" alt="" style="height:30px; width: 30px;"></div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#miNavbar" aria-controls="miNavbar" aria-expanded="false" aria-label="Mostrar u ocultar menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="slider-container">
-            <img class="slider-item"  src="1.jpg" alt="">
-            <img class="slider-item"  src="2.jpg" alt="">
-            <img class="slider-item"  src="3.jpg" alt="">
-        </div>
+            <div class="collapse navbar-collapse" id="miNavbar" >
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="registro.html">INSCRIPCION</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactos.html">CONTACTOS</a>
+                </li>
+      
+            </ul>
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                  <img src="R.jpg" class="nav-link dropdown-toggle img-fluid" height="70px"
+                      width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                      aria-expanded="false"></img>
+                  <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                      <table id="lista-carrito" class="table">
+                          <thead>
+                              <tr>
+                                  <th>Imagen</th>
+                                  <th>Nombre</th>
+                                  <th>Precio</th>
+                                  <th></th>
+                              </tr>
+                          </thead>
+                          <tbody></tbody>
+                      </table>
 
-        <div class="headline">
-                <CENTER><h1>INSCRIPCIONES ABIERTAS</h1><br></CENTER>
-                <center><button class="boton2">PRESIONE AQUI PARA MAS INFORMACION DE LOS CURSOS</button></center>
+                      <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">VACIAR REGISTRO</a>
+                      <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">REGISTRARSE<A/a>
+                  </div>
+              </li>
+          </ul>
         </div>
+    </nav>
+    <!-- Termina la definición del menú -->
+    <main role="main" class="container">
+        <div class="row">
+            <!-- Aquí pon las col-x necesarias, comienza tu contenido, etcétera -->
+            <div class="col-12">
+                <CENTER><h1 class="text-white">INSTITUTO TÉCNICO BERLIN</h1></CENTER>
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="1.jpg" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="2.jpg" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="3.jpg" alt="Third slide">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <br>}
+                    <center>
+                    <h1><p class="text-white">MISION</p></h1>
+                    <P class="text-white">Somos una Institución Educativa del nivel superior que proporciona a los estudiantes una formación científica, tecnológica y humanista de calidad, que permite satisfacer los requerimientos del mercado laboral competitivo, respetando su identidad y su cultura.</P>
+                    <h1><p class="text-white">VISION</p></h1>
+                    <p class="text-white">Al 2021 seremos una institución de educación superior tecnológica acreditada, líder a nivel Regional y Nacional, en competitividad profesional, para lograr un alto índice de inserción laboral y de autoempleo de sus egresados titulados.</p>
+                    </center>
+                </div>
+            
+                  <div class="col-12"  style="background-color: white ; border-radius: 50px;">
 
-        <div class="seccion">
-        
-        <div class="caja1">
-            <br>
-            <br>
-            <center>CONVERSOR DE DOLARES A BOLIVIANOS</center>
-            <br>
-            <Label>INSERTE EL MONTO EN DOLARES</Label>
-            <br>
-            <br>
-            <input type="text" class="caja" id="bol">
-            <br>
-            <br>
-            <button type="button" class="btn" onclick="cambio()">CONVERTIR A BOLIVIANOS</button>
-            <br>
-            <br>
-            <p type="text" class="texto-g"id="resul"></p>
+                <center><h1><label for="nombre">COMENTARIOS</label></h1></center>
+               <center>
+                <form class="form my-2 my-lg-0">
+                    <center>                    
+                    <label for="nombre">NOMBRE </label> 
+                    <input class="form-control mr-sm-2" type="text" placeholder="Nombre" aria-label="Nombre">
+                    <br>
+                    <br>
+                    <label for="nombre">CORREO </label> 
+                    <input class="form-control mr-sm-2" type="text" placeholder="Correo" aria-label="Correo">
+                    <br>
+                    <br>
+                    <label for="nombre">COMENTARIO</label> 
+                    <input class="form-control mr-sm-2" type="textarea" placeholder="Correo" aria-label="Correo">
+                    <br>
+                    <br>
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">ENVIAR</button>
+                </center>
+                </form>
             
         </div>
-        <div class="caja2">
-            <br>
-            <br>
-            <center>CONVERSOR DE BOLIVIANOS A DOLARES</center>
-            <br>
-            <Label>INSERTE EL MONTO EN BOLIVIANOS</Label>
-            <br>
-            <br>
-            <input type="text" class="caja" id="dol2">
-            <br>
-            <br>
-            <button type="button" class="btn" onclick="cambio2()">CONVERTIR A DOLARES</button>
-            <br>
-            <br>
-            <p type="text" class="texto-g"id="resul2"></p>
-        </div>
-        <div class="caja3">
-        
-            <form id="formulario">
-                <br>
-                <br>
-            <h2 class="text-center text-primary">INICIAR SESION</h2>
-                <br>
-                <br>    
-        <input id="nombre" type="text" placeholder="ingrese su nombre">
-            <br>
-            <br>   
-        <input id="ape" type="text" placeholder="ingrese su apelido">
-            <br>
-            <br>
-        <button class="btn btn-primary mt-2" type="submit">INICIAR SESION</button>
-        </form>
-        <hr>
+    </main>
+    <!-- Cargar jQuery y librerías JS necesarias. Si solo quieres el diseño, no las cargues -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-        <h3 id="respuesta" class="text-center fw-light">
-            
-        </h3>
-        </div>
-
-        </div>
-        <div class="seccion2">
-                <h1><center>REGISTRO</center></h1>
-                <br>
-                <br>
-                <center><input type="text" class="cajanombre" id="nombre" placeholder="inserte su nombre completo"></center>
-                <br>
-                <br>
-                <center><button type="button" class="boton" onclick="nombre()">REGISTRO</button></center>
-                <br>
-                <br>
-                <div class="logo2"></div>      
-        </div>
-        <script>
-            function nombre(){
-                var n=document.getElementById('nombre').value;
-                alert("BIENVENIDO AL SISTEMA "+n);
-            }
-            </script>   
-
-        <div class="footer">
-            <div class="foot1">
-                <br>
-                <h1>MISION</h1>
-                <br>
-                <h5>Somos una Institución Educativa del nivel superior que proporciona a los estudiantes una formación científica, tecnológica y humanista de calidad, que permite satisfacer los requerimientos del mercado laboral competitivo, respetando su identidad y su cultura.</h5>
-            </div>
-            <div class="foot1">
-                <br>
-                <h1>VISION</h1>
-                <br>
-                <h5>Al 2021 seremos una institución de educación superior tecnológica acreditada, líder a nivel Regional y Nacional, en competitividad profesional, para lograr un alto índice de inserción laboral y de autoempleo de sus egresados titulados.</h5>
-            
-            </div>
-            <div class="foot1">
-                <br>
-                <h2>ENFERMERIA</h2>
-                <br>
-                <br>
-                <h5>El Técnico Medio en Enfermería es integrante del equipo de salud, cuyas actividades y tareas están enfocadas principalmente en la realización de acciones en promoción de la salud, educación y cuidado de la salud sin dejar de lado a las personas</h5>
-            </div>
-            <div class="foot1">
-                <br>
-                <h2>SISTEMAS</h2>
-                <br>
-                <br>
-                <h5>El profesional Técnico Superior en Sistemas Informáticos está capacitado para planificar, dirigir, relevar, analizar, diseñar, desarrollar e implementar proyectos de integración de softwarE. El método práctico de enseñanza permite al estudiante gestionar soluciones </h5>
-
-            </div>
-        </div>
-
-    </div>
-    
 </body>
-<script src="app.js"></script>
+<br>
+<!-- Footer -->
+<footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">    
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p>
+            Somos una Institución Educativa del nivel superior que proporciona a los estudiantes una formación científica, tecnológica y humanista de calidad, que permite satisfacer los requerimientos del mercado laboral competitivo, respetando su identidad y su cultura.
+        </p>
+      </section>
+      <!-- Section: Text -->
+  
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">PAGINA REALIZADA POR JOSE RAMOS</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
 </html>

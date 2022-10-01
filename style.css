@@ -1,0 +1,16 @@
+/*
+  Nota: si no usas el navbar, el siguiente código
+  no es necesario
+*/
+body{
+  padding-top: 70px;
+  background-color: darkred;
+}
+img{
+  width: 100%;
+  height: 300px;
+}
+.reg{
+  width: 50px;
+  height: 50px;
+}
